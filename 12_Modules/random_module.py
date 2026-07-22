@@ -1,13 +1,12 @@
 import random
 
-numbers = [10, 20, 30, 40, 50]
+colors = ["Red", "Black", "Blue", "Pink"]
 
-print(f"Random Integer      : {random.randint(1, 100)}")
-print(f"Random Float        : {random.uniform(1, 10)}")
-print(f"Random Choice       : {random.choice(numbers)}")
-print(f"Random Sample       : {random.sample(numbers, 3)}")
+print(f"Random Integer : {random.randint(1000, 9999)}")
+print(f"Random Float   : {random.random()}")
+print(f"Random Range   : {random.randrange(1, 10, 2)}")
+print(f"Random Choice  : {random.choice(colors)}")
+print(f"Random Choices : {random.choices(colors, k=2)}")
 
-random.shuffle(numbers)
-print(f"Shuffled List       : {numbers}")
-
-print(f"Random Range Value  : {random.randrange(10, 51, 5)}")
+random.shuffle(colors)
+print(f"Shuffled List  : {colors}")
